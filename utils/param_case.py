@@ -15,7 +15,7 @@ class ParametrizedTestCase(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.close_app()
         cls.driver.quit()
-        pass
+
 
     def parametrize(testcase_class, param=None):
         print('parametrize--param: ', param)
